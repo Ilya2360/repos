@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal inforamation</legend>
+            <p><label for="surname">Surname:</label><input type="text" id="name"></p>
+            <p><label for="name">Name:</label><input type="text" id="name"></p>
+            <p><label for="number">How old are you?</label><input type="number" name="num" min="1" max="100"></p>
+            <p><label for="date">Full date of birth:</label><input type="date" name="date"></p>
+            <p><label for="#">I accept the term of the agreemant</label><input type="checkbox" name="check"></p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Registration</legend>
+            <p><strong>Email:</strong><input type="email" name="email" placeholder="email@example.com"></p>
+            <p><strong>Password:</strong><input type="password" name="pass"></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>An interesting facts about you</legend>
+            <p>Do you love cats?</p>
+            <p><input name="var" type="radio" value="Yes" checked>Yes</p>
+            <p><input name="var" type="radio" value="no">NO</p>
+
+            <p>What is your favorite color?<input type="color" name="color"></p>
+            <p>What did you go to bed?<input type="time" name="time"></p>
+            <p>What are you favorite brand of cars?
+            <select name="cars">
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="honda">Honda</option></p>
+            </select>
+            <p>How do you rate our work?<input type="range" min="0" max="100" step="1" value="50"></p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional info</legend>
+            <p>Comments:<textarea name="text"></textarea></p>
+            <p>Would you recommed us?"
+            <select>
+                <option value="yes">yes</option>
+                <option value="no">no</option></p>
+            </select>
+        </fieldset>
+
+        <button type="submit">Submite</button>
+    </form>
+</body>
+</html>
